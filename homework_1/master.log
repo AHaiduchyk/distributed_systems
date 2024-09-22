@@ -1,0 +1,53 @@
+2024-09-22 08:19:50,934 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.247.4:5000
+2024-09-22 08:19:50,934 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-22 08:21:12,989 - INFO - Message added: {'message': 'Init message!', 'timestamp': '2024-09-22T08:21:12.989162'}
+2024-09-22 08:21:15,005 - INFO - Message replicated: {'message': 'Init message!', 'timestamp': '2024-09-22T08:21:12.989162'}
+2024-09-22 08:21:15,005 - INFO - 192.168.247.1 - - [22/Sep/2024 08:21:15] "POST /messages HTTP/1.1" 200 -
+2024-09-22 08:21:19,375 - INFO - Message added: {'message': 'Second  message!', 'timestamp': '2024-09-22T08:21:19.375160'}
+2024-09-22 08:21:21,388 - INFO - Message replicated: {'message': 'Second  message!', 'timestamp': '2024-09-22T08:21:19.375160'}
+2024-09-22 08:21:21,389 - INFO - 192.168.247.1 - - [22/Sep/2024 08:21:21] "POST /messages HTTP/1.1" 200 -
+2024-09-22 08:21:33,384 - INFO - Messages requested
+2024-09-22 08:21:33,384 - INFO - {
+    "messages": [
+        {
+            "message": "Init message!",
+            "timestamp": "2024-09-22T08:21:12.989162"
+        },
+        {
+            "message": "Second  message!",
+            "timestamp": "2024-09-22T08:21:19.375160"
+        }
+    ]
+}
+2024-09-22 08:21:33,384 - INFO - 192.168.247.1 - - [22/Sep/2024 08:21:33] "GET /messages HTTP/1.1" 200 -
+2024-09-22 08:22:06,988 - INFO - Message added: {'message': 'Message 3!', 'timestamp': '2024-09-22T08:22:06.988148'}
+2024-09-22 08:22:09,003 - INFO - Message replicated: {'message': 'Message 3!', 'timestamp': '2024-09-22T08:22:06.988148'}
+2024-09-22 08:22:09,004 - INFO - 192.168.247.1 - - [22/Sep/2024 08:22:09] "POST /messages HTTP/1.1" 200 -
+2024-09-22 08:22:30,437 - INFO - Message added: {'message': 'The last message!', 'timestamp': '2024-09-22T08:22:30.437027'}
+2024-09-22 08:22:32,450 - INFO - Message replicated: {'message': 'The last message!', 'timestamp': '2024-09-22T08:22:30.437027'}
+2024-09-22 08:22:32,450 - INFO - 192.168.247.1 - - [22/Sep/2024 08:22:32] "POST /messages HTTP/1.1" 200 -
+2024-09-22 08:22:38,425 - INFO - Messages requested
+2024-09-22 08:22:38,426 - INFO - {
+    "messages": [
+        {
+            "message": "Init message!",
+            "timestamp": "2024-09-22T08:21:12.989162"
+        },
+        {
+            "message": "Second  message!",
+            "timestamp": "2024-09-22T08:21:19.375160"
+        },
+        {
+            "message": "Message 3!",
+            "timestamp": "2024-09-22T08:22:06.988148"
+        },
+        {
+            "message": "The last message!",
+            "timestamp": "2024-09-22T08:22:30.437027"
+        }
+    ]
+}
+2024-09-22 08:22:38,426 - INFO - 192.168.247.1 - - [22/Sep/2024 08:22:38] "GET /messages HTTP/1.1" 200 -
