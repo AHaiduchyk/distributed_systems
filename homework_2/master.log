@@ -1,0 +1,122 @@
+2024-10-05 12:21:15,429 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.107.4:5000
+2024-10-05 12:21:15,431 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-05 12:22:36,880 - INFO - Replicated messages requested
+2024-10-05 12:22:36,880 - INFO - {
+    "messages": []
+}
+2024-10-05 12:22:36,880 - INFO - 192.168.107.1 - - [05/Oct/2024 12:22:36] "GET /messages HTTP/1.1" 200 -
+2024-10-05 12:22:55,538 - INFO - ACK received from http://secondary_2:5002
+2024-10-05 12:22:55,538 - INFO - 192.168.107.1 - - [05/Oct/2024 12:22:55] "POST /messages HTTP/1.1" 200 -
+2024-10-05 12:23:02,003 - INFO - ACK received from http://secondary_2:5002
+2024-10-05 12:23:02,003 - INFO - 192.168.107.1 - - [05/Oct/2024 12:23:02] "POST /messages HTTP/1.1" 200 -
+2024-10-05 12:23:07,152 - INFO - ACK received from http://secondary_2:5002
+2024-10-05 12:23:07,152 - INFO - 192.168.107.1 - - [05/Oct/2024 12:23:07] "POST /messages HTTP/1.1" 200 -
+2024-10-05 12:23:14,951 - INFO - ACK received from http://secondary_2:5002
+2024-10-05 12:23:14,952 - INFO - 192.168.107.1 - - [05/Oct/2024 12:23:14] "POST /messages HTTP/1.1" 200 -
+2024-10-05 12:23:17,042 - INFO - ACK received from http://secondary_2:5002
+2024-10-05 12:23:17,043 - INFO - 192.168.107.1 - - [05/Oct/2024 12:23:17] "POST /messages HTTP/1.1" 200 -
+2024-10-05 12:23:22,733 - INFO - ACK received from http://secondary_2:5002
+2024-10-05 12:23:22,733 - INFO - 192.168.107.1 - - [05/Oct/2024 12:23:22] "POST /messages HTTP/1.1" 200 -
+2024-10-05 12:23:26,070 - INFO - ACK received from http://secondary_2:5002
+2024-10-05 12:23:33,340 - INFO - Replicated messages requested
+2024-10-05 12:23:33,340 - INFO - {
+    "messages": [
+        {
+            "message": "First message",
+            "timestamp": "2024-10-05T12:22:55.524648",
+            "id": 1
+        },
+        {
+            "message": "Second message",
+            "timestamp": "2024-10-05T12:23:01.996846",
+            "id": 2
+        },
+        {
+            "message": "Hello  message",
+            "timestamp": "2024-10-05T12:23:07.145935",
+            "id": 3
+        },
+        {
+            "message": "Check",
+            "timestamp": "2024-10-05T12:23:14.943189",
+            "id": 4
+        },
+        {
+            "message": "Check",
+            "timestamp": "2024-10-05T12:23:17.035666",
+            "id": 5
+        },
+        {
+            "message": "Check",
+            "timestamp": "2024-10-05T12:23:22.726150",
+            "id": 6
+        },
+        {
+            "message": "Check",
+            "timestamp": "2024-10-05T12:23:26.063548",
+            "id": 7
+        }
+    ]
+}
+2024-10-05 12:23:33,341 - INFO - 192.168.107.1 - - [05/Oct/2024 12:23:33] "GET /messages HTTP/1.1" 200 -
+2024-10-05 12:24:56,166 - INFO - ACK received from http://secondary_1:5001
+2024-10-05 12:24:56,167 - INFO - 192.168.107.1 - - [05/Oct/2024 12:24:56] "POST /messages HTTP/1.1" 200 -
+2024-10-05 12:27:01,486 - INFO - ACK received from http://secondary_2:5002
+2024-10-05 12:28:01,550 - INFO - ACK received from http://secondary_1:5001
+2024-10-05 12:28:01,551 - INFO - 192.168.107.1 - - [05/Oct/2024 12:28:01] "POST /messages HTTP/1.1" 200 -
+2024-10-05 12:41:15,751 - INFO - ACK received from http://secondary_2:5002
+2024-10-05 12:41:15,752 - INFO - 192.168.107.1 - - [05/Oct/2024 12:41:15] "POST /messages HTTP/1.1" 200 -
+2024-10-05 12:41:31,933 - INFO - Replicated messages requested
+2024-10-05 12:41:31,934 - INFO - {
+    "messages": [
+        {
+            "message": "First message",
+            "timestamp": "2024-10-05T12:22:55.524648",
+            "id": 1
+        },
+        {
+            "message": "Second message",
+            "timestamp": "2024-10-05T12:23:01.996846",
+            "id": 2
+        },
+        {
+            "message": "Hello  message",
+            "timestamp": "2024-10-05T12:23:07.145935",
+            "id": 3
+        },
+        {
+            "message": "Check",
+            "timestamp": "2024-10-05T12:23:14.943189",
+            "id": 4
+        },
+        {
+            "message": "Check",
+            "timestamp": "2024-10-05T12:23:17.035666",
+            "id": 5
+        },
+        {
+            "message": "Check",
+            "timestamp": "2024-10-05T12:23:22.726150",
+            "id": 6
+        },
+        {
+            "message": "Check",
+            "timestamp": "2024-10-05T12:23:26.063548",
+            "id": 7
+        },
+        {
+            "message": "Check final 1",
+            "timestamp": "2024-10-05T12:27:01.479280",
+            "id": 8
+        },
+        {
+            "message": "Check final 2",
+            "timestamp": "2024-10-05T12:41:15.743778",
+            "id": 9
+        }
+    ]
+}
+2024-10-05 12:41:31,934 - INFO - 192.168.107.1 - - [05/Oct/2024 12:41:31] "GET /messages HTTP/1.1" 200 -

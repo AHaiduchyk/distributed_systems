@@ -1,0 +1,34 @@
+version: '3'
+services:
+  master:
+    build:
+      context: ./  # Директорія з master.py
+    container_name: master
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+    command: python master.py
+    depends_on:
+      - secondary1
+      - secondary2
+
+  secondary1:
+    build:
+      context: ./  # Директорія з secondary_1.py
+    container_name: secondary_1
+    ports:
+      - "5001:5001"
+    environment:
+      - FLASK_ENV=development
+    command: python secondary_1.py
+
+  secondary2:
+    build:
+      context: ./  # Директорія з secondary_2.py
+    container_name: secondary_2
+    ports:
+      - "5002:5002"
+    environment:
+      - FLASK_ENV=development
+    command: python secondary_2.py
