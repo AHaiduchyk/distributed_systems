@@ -1,0 +1,249 @@
+2024-10-06 19:50:30,896 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.227.3:5001
+2024-10-06 19:50:30,897 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-06 19:50:31,129 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:50:31.128995",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:50:31,129 - INFO - 192.168.227.4 - - [06/Oct/2024 19:50:31] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:50:41,146 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:50:41.146586",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:50:41,147 - INFO - 192.168.227.4 - - [06/Oct/2024 19:50:41] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:50:51,166 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:50:51.166766",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:50:51,167 - INFO - 192.168.227.4 - - [06/Oct/2024 19:50:51] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:50:57,585 - INFO - Replicated messages requested
+2024-10-06 19:50:57,585 - INFO - Filtered messages: []
+2024-10-06 19:50:57,585 - INFO - 192.168.227.1 - - [06/Oct/2024 19:50:57] "GET /messages HTTP/1.1" 200 -
+2024-10-06 19:51:01,190 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:51:01.190371",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:51:01,190 - INFO - 192.168.227.4 - - [06/Oct/2024 19:51:01] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:51:11,209 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:51:11.209145",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:51:11,209 - INFO - 192.168.227.4 - - [06/Oct/2024 19:51:11] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:51:21,236 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:51:21.236834",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:51:21,237 - INFO - 192.168.227.4 - - [06/Oct/2024 19:51:21] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:51:31,255 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:51:31.255301",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:51:31,255 - INFO - 192.168.227.4 - - [06/Oct/2024 19:51:31] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:51:41,278 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:51:41.278782",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:51:41,279 - INFO - 192.168.227.4 - - [06/Oct/2024 19:51:41] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:51:51,298 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:51:51.298134",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:51:51,298 - INFO - 192.168.227.4 - - [06/Oct/2024 19:51:51] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:52:01,318 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:52:01.318501",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:52:01,318 - INFO - 192.168.227.4 - - [06/Oct/2024 19:52:01] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:52:11,341 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:52:11.341691",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:52:11,342 - INFO - 192.168.227.4 - - [06/Oct/2024 19:52:11] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:52:21,361 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:52:21.361917",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:52:21,362 - INFO - 192.168.227.4 - - [06/Oct/2024 19:52:21] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:52:31,380 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:52:31.380810",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:52:31,381 - INFO - 192.168.227.4 - - [06/Oct/2024 19:52:31] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:52:41,405 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:52:41.405892",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:52:41,406 - INFO - 192.168.227.4 - - [06/Oct/2024 19:52:41] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:52:51,426 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:52:51.426743",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:52:51,427 - INFO - 192.168.227.4 - - [06/Oct/2024 19:52:51] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:53:01,451 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:53:01.451713",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:53:01,452 - INFO - 192.168.227.4 - - [06/Oct/2024 19:53:01] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:53:11,473 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:53:11.473084",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:53:11,473 - INFO - 192.168.227.4 - - [06/Oct/2024 19:53:11] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:53:21,498 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:53:21.498618",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:53:21,499 - INFO - 192.168.227.4 - - [06/Oct/2024 19:53:21] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:53:31,523 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:53:31.523554",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:53:31,524 - INFO - 192.168.227.4 - - [06/Oct/2024 19:53:31] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:53:41,550 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:53:41.550687",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:53:41,552 - INFO - 192.168.227.4 - - [06/Oct/2024 19:53:41] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:53:51,583 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:53:51.582929",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:53:51,583 - INFO - 192.168.227.4 - - [06/Oct/2024 19:53:51] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:54:01,605 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:54:01.605462",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:54:01,605 - INFO - 192.168.227.4 - - [06/Oct/2024 19:54:01] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:54:11,631 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:54:11.631543",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:54:11,632 - INFO - 192.168.227.4 - - [06/Oct/2024 19:54:11] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:54:12,827 - INFO - Message replicated: {'id': 1, 'message': 'Test message after secondary_2 starts', 'timestamp': '2024-10-06T19:53:57.782080'}
+2024-10-06 19:54:12,827 - INFO - 192.168.227.4 - - [06/Oct/2024 19:54:12] "POST /replicate HTTP/1.1" 200 -
+2024-10-06 19:54:12,827 - INFO - Duplicate message ignored: 1
+2024-10-06 19:54:12,827 - INFO - 192.168.227.4 - - [06/Oct/2024 19:54:12] "POST /replicate HTTP/1.1" 200 -
+2024-10-06 19:54:12,828 - INFO - Duplicate message ignored: 1
+2024-10-06 19:54:12,828 - INFO - 192.168.227.4 - - [06/Oct/2024 19:54:12] "POST /replicate HTTP/1.1" 200 -
+2024-10-06 19:54:15,455 - INFO - Replicated messages requested
+2024-10-06 19:54:15,455 - INFO - Filtered messages: [{'id': 1, 'message': 'Test message after secondary_2 starts', 'timestamp': '2024-10-06T19:53:57.782080'}]
+2024-10-06 19:54:15,456 - INFO - 192.168.227.1 - - [06/Oct/2024 19:54:15] "GET /messages HTTP/1.1" 200 -
+2024-10-06 19:54:21,657 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:54:21.657659",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:54:21,658 - INFO - 192.168.227.4 - - [06/Oct/2024 19:54:21] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:54:31,683 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:54:31.683683",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:54:31,684 - INFO - 192.168.227.4 - - [06/Oct/2024 19:54:31] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:54:41,705 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:54:41.705758",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:54:41,706 - INFO - 192.168.227.4 - - [06/Oct/2024 19:54:41] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:54:51,731 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:54:51.731771",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:54:51,732 - INFO - 192.168.227.4 - - [06/Oct/2024 19:54:51] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:55:01,752 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:55:01.752571",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:55:01,753 - INFO - 192.168.227.4 - - [06/Oct/2024 19:55:01] "GET /heartbeat HTTP/1.1" 200 -
+2024-10-06 19:55:11,775 - INFO - {
+    "event": "Heartbeat received from master",
+    "timestamp": "2024-10-06T19:55:11.775464",
+    "details": {
+        "status": "Healthy"
+    }
+}
+2024-10-06 19:55:11,775 - INFO - 192.168.227.4 - - [06/Oct/2024 19:55:11] "GET /heartbeat HTTP/1.1" 200 -
