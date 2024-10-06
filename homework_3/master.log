@@ -1,0 +1,154 @@
+2024-10-06 18:58:40,093 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.148.4:5000
+2024-10-06 18:58:40,093 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-06 18:59:00,900 - INFO - Replicated messages requested
+2024-10-06 18:59:00,900 - INFO - {
+    "messages": []
+}
+2024-10-06 18:59:00,900 - INFO - 192.168.148.1 - - [06/Oct/2024 18:59:00] "GET /messages HTTP/1.1" 200 -
+2024-10-06 18:59:13,431 - INFO - Master received message: Message 1
+2024-10-06 18:59:13,462 - INFO - Returning immediately with w=1. Replication will continue in background.
+2024-10-06 18:59:13,462 - INFO - 192.168.148.1 - - [06/Oct/2024 18:59:13] "POST /replicate HTTP/1.1" 200 -
+2024-10-06 18:59:13,468 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a464ca0>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 18:59:14,477 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a47aa60>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 18:59:17,403 - INFO - Replicated messages requested
+2024-10-06 18:59:17,404 - INFO - {
+    "messages": [
+        {
+            "message": "Message 1",
+            "timestamp": "2024-10-06T18:59:13.431798",
+            "id": 1
+        }
+    ]
+}
+2024-10-06 18:59:17,404 - INFO - 192.168.148.1 - - [06/Oct/2024 18:59:17] "GET /messages HTTP/1.1" 200 -
+2024-10-06 18:59:17,489 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a457730>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 18:59:18,481 - ERROR - Replication to http://secondary1:5001 failed: HTTPConnectionPool(host='secondary1', port=5001): Read timed out. (read timeout=5). Retrying...
+2024-10-06 18:59:24,495 - ERROR - Replication to http://secondary1:5001 failed: HTTPConnectionPool(host='secondary1', port=5001): Read timed out. (read timeout=5). Retrying...
+2024-10-06 18:59:26,504 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a43ceb0>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 18:59:32,515 - ERROR - Replication to http://secondary1:5001 failed: HTTPConnectionPool(host='secondary1', port=5001): Read timed out. (read timeout=5). Retrying...
+2024-10-06 18:59:53,539 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a4275e0>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:00:36,959 - INFO - Master received message: Message 2
+2024-10-06 19:00:36,969 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a457760>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:00:37,975 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a4574f0>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:00:40,987 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a47a7c0>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:00:41,978 - ERROR - Replication to http://secondary1:5001 failed: HTTPConnectionPool(host='secondary1', port=5001): Read timed out. (read timeout=5). Retrying...
+2024-10-06 19:00:47,995 - ERROR - Replication to http://secondary1:5001 failed: HTTPConnectionPool(host='secondary1', port=5001): Read timed out. (read timeout=5). Retrying...
+2024-10-06 19:00:50,003 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a45b0d0>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:00:51,993 - INFO - ack_count.value: 2, w: 2
+2024-10-06 19:00:51,993 - INFO - 192.168.148.1 - - [06/Oct/2024 19:00:51] "POST /replicate HTTP/1.1" 200 -
+2024-10-06 19:01:01,677 - INFO - Master received message: Message 3
+2024-10-06 19:01:01,683 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a457940>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:01:02,690 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a467a00>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:01:05,703 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a467100>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:01:06,699 - ERROR - Replication to http://secondary1:5001 failed: HTTPConnectionPool(host='secondary1', port=5001): Read timed out. (read timeout=5). Retrying...
+2024-10-06 19:01:14,625 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a457940>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:01:14,721 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a45b310>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:01:17,037 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6aca4640>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:01:27,350 - INFO - Master received message: Message 4
+2024-10-06 19:01:27,355 - INFO - Returning immediately with w=1. Replication will continue in background.
+2024-10-06 19:01:27,355 - INFO - 192.168.148.1 - - [06/Oct/2024 19:01:27] "POST /replicate HTTP/1.1" 200 -
+2024-10-06 19:01:27,356 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6aca43d0>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:01:28,362 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6acf3970>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:01:31,371 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a476df0>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:01:32,366 - ERROR - Replication to http://secondary1:5001 failed: HTTPConnectionPool(host='secondary1', port=5001): Read timed out. (read timeout=5). Retrying...
+2024-10-06 19:01:40,387 - ERROR - Replication to http://secondary1:5001 failed: HTTPConnectionPool(host='secondary1', port=5001): Read timed out. (read timeout=5). Retrying...
+2024-10-06 19:01:40,388 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a476f70>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:01:41,757 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6acf3ee0>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:01:45,772 - INFO - Replicated messages requested
+2024-10-06 19:01:45,773 - INFO - {
+    "messages": [
+        {
+            "message": "Message 1",
+            "timestamp": "2024-10-06T18:59:13.431798",
+            "id": 1
+        },
+        {
+            "message": "Message 2",
+            "timestamp": "2024-10-06T19:00:36.959453",
+            "id": 2
+        },
+        {
+            "message": "Message 3",
+            "timestamp": "2024-10-06T19:01:01.676965",
+            "id": 3
+        },
+        {
+            "message": "Message 4",
+            "timestamp": "2024-10-06T19:01:27.350268",
+            "id": 4
+        }
+    ]
+}
+2024-10-06 19:01:45,773 - INFO - 192.168.148.1 - - [06/Oct/2024 19:01:45] "GET /messages HTTP/1.1" 200 -
+2024-10-06 19:02:07,425 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a427f70>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:02:38,125 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a476070>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:03:02,843 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a40fee0>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:03:28,516 - ERROR - Replication to http://secondary2:5002 failed: HTTPConnectionPool(host='secondary2', port=5002): Max retries exceeded with url: /replicate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae6a4783d0>: Failed to establish a new connection: [Errno 111] Connection refused')). Retrying...
+2024-10-06 19:07:05,892 - INFO - ack_count.value: 3, w: 3
+2024-10-06 19:07:05,893 - INFO - 192.168.148.1 - - [06/Oct/2024 19:07:05] "POST /replicate HTTP/1.1" 200 -
+2024-10-06 19:08:30,320 - INFO - Replicated messages requested
+2024-10-06 19:08:30,320 - INFO - {
+    "messages": [
+        {
+            "message": "Message 1",
+            "timestamp": "2024-10-06T18:59:13.431798",
+            "id": 1
+        },
+        {
+            "message": "Message 2",
+            "timestamp": "2024-10-06T19:00:36.959453",
+            "id": 2
+        },
+        {
+            "message": "Message 3",
+            "timestamp": "2024-10-06T19:01:01.676965",
+            "id": 3
+        },
+        {
+            "message": "Message 4",
+            "timestamp": "2024-10-06T19:01:27.350268",
+            "id": 4
+        }
+    ]
+}
+2024-10-06 19:08:30,321 - INFO - 192.168.148.1 - - [06/Oct/2024 19:08:30] "GET /messages HTTP/1.1" 200 -
+2024-10-06 19:08:48,206 - INFO - Master received message: This is succes
+2024-10-06 19:08:48,214 - INFO - ack_count.value: 2, w: 2
+2024-10-06 19:08:48,214 - INFO - 192.168.148.1 - - [06/Oct/2024 19:08:48] "POST /replicate HTTP/1.1" 200 -
+2024-10-06 19:08:52,394 - INFO - Replicated messages requested
+2024-10-06 19:08:52,395 - INFO - {
+    "messages": [
+        {
+            "message": "Message 1",
+            "timestamp": "2024-10-06T18:59:13.431798",
+            "id": 1
+        },
+        {
+            "message": "Message 2",
+            "timestamp": "2024-10-06T19:00:36.959453",
+            "id": 2
+        },
+        {
+            "message": "Message 3",
+            "timestamp": "2024-10-06T19:01:01.676965",
+            "id": 3
+        },
+        {
+            "message": "Message 4",
+            "timestamp": "2024-10-06T19:01:27.350268",
+            "id": 4
+        },
+        {
+            "message": "This is succes",
+            "timestamp": "2024-10-06T19:08:48.206618",
+            "id": 5
+        }
+    ]
+}
+2024-10-06 19:08:52,395 - INFO - 192.168.148.1 - - [06/Oct/2024 19:08:52] "GET /messages HTTP/1.1" 200 -
+2024-10-06 19:08:53,220 - ERROR - Replication to http://secondary1:5001 failed: HTTPConnectionPool(host='secondary1', port=5001): Read timed out. (read timeout=5). Retrying...
+2024-10-06 19:08:59,238 - ERROR - Replication to http://secondary1:5001 failed: HTTPConnectionPool(host='secondary1', port=5001): Read timed out. (read timeout=5). Retrying...
+2024-10-06 19:09:07,251 - ERROR - Replication to http://secondary1:5001 failed: HTTPConnectionPool(host='secondary1', port=5001): Read timed out. (read timeout=5). Retrying...

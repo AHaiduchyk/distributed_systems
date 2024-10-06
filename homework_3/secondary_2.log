@@ -1,0 +1,24 @@
+2024-10-06 19:03:39,709 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.148.3:5002
+2024-10-06 19:03:39,709 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-06 19:05:17,735 - INFO - Message replicated: {'id': 1, 'message': 'Message 1', 'timestamp': '2024-10-06T18:59:13.431798'}
+2024-10-06 19:05:17,736 - INFO - 192.168.148.4 - - [06/Oct/2024 19:05:17] "POST /replicate HTTP/1.1" 200 -
+2024-10-06 19:06:41,231 - INFO - Message replicated: {'id': 2, 'message': 'Message 2', 'timestamp': '2024-10-06T19:00:36.959453'}
+2024-10-06 19:06:41,231 - INFO - 192.168.148.4 - - [06/Oct/2024 19:06:41] "POST /replicate HTTP/1.1" 200 -
+2024-10-06 19:06:48,356 - INFO - Replicated messages requested
+2024-10-06 19:06:48,357 - INFO - Filtered messages: [{'id': 1, 'message': 'Message 1', 'timestamp': '2024-10-06T18:59:13.431798'}, {'id': 2, 'message': 'Message 2', 'timestamp': '2024-10-06T19:00:36.959453'}]
+2024-10-06 19:06:48,357 - INFO - 192.168.148.1 - - [06/Oct/2024 19:06:48] "GET /messages HTTP/1.1" 200 -
+2024-10-06 19:07:05,890 - INFO - Message replicated: {'id': 3, 'message': 'Message 3', 'timestamp': '2024-10-06T19:01:01.676965'}
+2024-10-06 19:07:05,891 - INFO - 192.168.148.4 - - [06/Oct/2024 19:07:05] "POST /replicate HTTP/1.1" 200 -
+2024-10-06 19:07:31,623 - INFO - Message replicated: {'id': 4, 'message': 'Message 4', 'timestamp': '2024-10-06T19:01:27.350268'}
+2024-10-06 19:07:31,623 - INFO - 192.168.148.4 - - [06/Oct/2024 19:07:31] "POST /replicate HTTP/1.1" 200 -
+2024-10-06 19:08:06,448 - INFO - Replicated messages requested
+2024-10-06 19:08:06,449 - INFO - Filtered messages: [{'id': 1, 'message': 'Message 1', 'timestamp': '2024-10-06T18:59:13.431798'}, {'id': 2, 'message': 'Message 2', 'timestamp': '2024-10-06T19:00:36.959453'}, {'id': 3, 'message': 'Message 3', 'timestamp': '2024-10-06T19:01:01.676965'}, {'id': 4, 'message': 'Message 4', 'timestamp': '2024-10-06T19:01:27.350268'}]
+2024-10-06 19:08:06,449 - INFO - 192.168.148.1 - - [06/Oct/2024 19:08:06] "GET /messages HTTP/1.1" 200 -
+2024-10-06 19:08:48,212 - INFO - Message replicated: {'id': 5, 'message': 'This is succes', 'timestamp': '2024-10-06T19:08:48.206618'}
+2024-10-06 19:08:48,213 - INFO - 192.168.148.4 - - [06/Oct/2024 19:08:48] "POST /replicate HTTP/1.1" 200 -
+2024-10-06 19:09:13,357 - INFO - Replicated messages requested
+2024-10-06 19:09:13,357 - INFO - Filtered messages: [{'id': 1, 'message': 'Message 1', 'timestamp': '2024-10-06T18:59:13.431798'}, {'id': 2, 'message': 'Message 2', 'timestamp': '2024-10-06T19:00:36.959453'}, {'id': 3, 'message': 'Message 3', 'timestamp': '2024-10-06T19:01:01.676965'}, {'id': 4, 'message': 'Message 4', 'timestamp': '2024-10-06T19:01:27.350268'}, {'id': 5, 'message': 'This is succes', 'timestamp': '2024-10-06T19:08:48.206618'}]
+2024-10-06 19:09:13,358 - INFO - 192.168.148.1 - - [06/Oct/2024 19:09:13] "GET /messages HTTP/1.1" 200 -
