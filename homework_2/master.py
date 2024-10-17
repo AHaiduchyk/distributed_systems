@@ -66,11 +66,16 @@ def add_message():
         }
         messages.append(message_entry)
 
-        # Start the replication process
-        threading.Thread(target=replicate_message_to_secondaries, args=(message_entry, w, ack_event)).start()
+        # Start the replication process in the background
+        replication_thread = threading.Thread(target=replicate_message_to_secondaries, args=(message_entry, w, ack_event))
+        replication_thread.start()
 
-        # Optionally, wait for the acknowledgment (you can adjust this based on your requirements)
-        ack_event.wait()  # Wait until ACK is received
+        # If w=1, return success immediately without waiting for ACKs from secondaries
+        if w == 1:
+            return jsonify({'status': 'Message replicated', 'message': message_entry}), 200
+
+        # Otherwise, wait for the required ACKs from secondaries
+        ack_event.wait()  # Wait until the required ACKs are received
         return jsonify({'status': 'Message replicated', 'message': message_entry}), 200
 
     logging.warning('No message provided')
