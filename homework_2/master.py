@@ -13,6 +13,8 @@ logging.basicConfig(filename='master.log', level=logging.INFO, format='%(asctime
 
 # Master messages - list of dicts
 messages = []
+messages_lock = threading.Lock()  # Create a lock for synchronizing access to the messages list
+
 
 # List of secondaries
 secondaries = [
@@ -59,12 +61,15 @@ def add_message():
 
     if message:
         timestamp = datetime.now().isoformat()
-        message_entry = {
-            'message': message,
-            'timestamp': timestamp,
-            'id': len(messages) + 1  # Assuming ID is based on the length of messages
-        }
-        messages.append(message_entry)
+
+        # Lock access to the shared 'messages' list
+        with messages_lock:
+            message_entry = {
+                'message': message,
+                'timestamp': timestamp,
+                'id': len(messages) + 1  # Ensure message ID is unique and consistent
+            }
+            messages.append(message_entry)
 
         # Start the replication process in the background
         replication_thread = threading.Thread(target=replicate_message_to_secondaries, args=(message_entry, w, ack_event))
@@ -72,6 +77,7 @@ def add_message():
 
         # If w=1, return success immediately without waiting for ACKs from secondaries
         if w == 1:
+            logging.info(f"Message received and processed without waiting for secondaries. Message: {message_entry}")
             return jsonify({'status': 'Message replicated', 'message': message_entry}), 200
 
         # Otherwise, wait for the required ACKs from secondaries
@@ -80,6 +86,7 @@ def add_message():
 
     logging.warning('No message provided')
     return jsonify({'status': 'No message provided'}), 400
+
 
 @app.route('/messages', methods=['GET'])
 def get_messages():
